@@ -30,7 +30,7 @@ Left-click on the image to activate the magnifier tool and view pixel-level deta
 
 [**Installation**](url)
 
-Clone the repository: bash `git clone https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git `
+Clone the repository: bash git clone `https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git `
 
 `cd Medical-Image-Processor-with-Interactive-Zoom`
 
