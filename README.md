@@ -27,7 +27,6 @@ Left-click on the image to activate the magnifier tool and view pixel-level deta
 **Image Saving:** Save the processed image in PNG or JPEG format with a single click.
 
 
-
 **Installation**
 
 Clone the repository: bash git clone https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git
