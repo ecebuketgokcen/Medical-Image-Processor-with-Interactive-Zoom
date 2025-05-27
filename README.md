@@ -94,8 +94,6 @@ Click Save Image to export the processed version.
 
 Ensure your system has a proper Python environment setup before running the application. If you encounter issues, check that all dependencies (such as PySide6 and OpenCV) are correctly installed.
 
-This project was designed as part of the "Computational Methods in Engineering" course of Ankara University Biomedical Engineering department.It focuses on building a graphical interface for interactive medical image analysis using PySide6 and OpenCV.
-
 
 **Contributing**
 
