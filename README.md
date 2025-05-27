@@ -30,18 +30,17 @@ Left-click on the image to activate the magnifier tool and view pixel-level deta
 
 [**Installation**](url)
 
-Clone the repository: bash git clone https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git
+Clone the repository: bash `git clone https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git `
 
-cd Medical-Image-Processor-with-Interactive-Zoom
+`cd Medical-Image-Processor-with-Interactive-Zoom`
 
+Install dependencies: bash `pip install -r requirements.txt `
 
-Install dependencies: bash pip install -r requirements.txt 
-
-install manually: bash pip install PySide6 opencv-python
-
+install manually: bash `pip install PySide6 opencv-python`
 
 [**Usage**](url)
-Run the application using: bash python main.py
+
+Run the application using: bash `python main.py`
 
 Once the GUI opens:
 
@@ -89,7 +88,7 @@ Click Save Image to export the processed version.
 
 
 
-[📝 **Notes**](url)
+[📝**Notes**](url)
 
 Ensure your system has a proper Python environment setup before running the application. If you encounter issues, check that all dependencies (such as PySide6 and OpenCV) are correctly installed.
 
@@ -97,5 +96,4 @@ Ensure your system has a proper Python environment setup before running the appl
 [**Contributing**](url)
 
 Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements.
-
 
