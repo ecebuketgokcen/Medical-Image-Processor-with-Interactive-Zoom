@@ -3,8 +3,9 @@
 
 🧠 **Project Description**
 
-This project is a medical image processing application developed using PySide6 and OpenCV, as part of the Computational Methods in Engineering course at Ankara University, Department of Biomedical Engineering.
-It provides an interactive GUI for real-time image operations, including grayscale conversion, edge detection, dynamic zooming with mouse wheel, and magnification through mouse click.
+Medical Image Processor with Interactive Zoom is a Python-based GUI application developed using PySide 6 and OpenCV. It allows users to perform basic image processing tasks such as grayscale conversion and edge detection on medical images. The application features two forms of visual inspection: users can scroll the mouse wheel to adjust image sharpness (simulate focus), and they can zoom into a selected region by adjusting the zoom area slider and choosing the desired part of the image. A magnifier tool activated by left-click further enhances detailed analysis of specific areas.
+
+This project was developed as part of the Computational Methods in Engineering course at Ankara University, Department of Biomedical Engineering.
 
 ✨ **Features**
 
