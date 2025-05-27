@@ -1,33 +1,63 @@
 ### _**Medical Image Processor with Interactive Zoom**_
-Python + PySide6 + OpenCV
 
 
-🧠 **Project Overview**
+🧠 **Project Description**
 
-This is a desktop application for basic medical image processing, allowing users to perform grayscale transformation, edge detection, brightness control, and interactive zoom-in functionality over images.
-
-Developed using PySide6 (Qt for Python) and OpenCV, the application provides a clean and simple GUI for healthcare image exploration.
-
+This project is a medical image processing application developed using PySide6 and OpenCV, as part of the Computational Methods in Engineering course at Ankara University, Department of Biomedical Engineering.
+It provides an interactive GUI for real-time image operations, including grayscale conversion, edge detection, dynamic zooming with mouse wheel, and magnification through mouse click.
 
 ✨ **Features**
 
-**Image Upload:** Load PNG, JPEG, and JPG images.
+**Image Upload:** Load PNG, JPEG, and JPG images through a user-friendly file dialog.  
 
-**Grayscale Conversion:** Convert colored images to grayscale with brightness adjustment.
+**Grayscale Conversion:** Convert colored medical images to grayscale. Brightness can be adjusted dynamically via a slider.  
 
-**Edge Detection:** Detect edges using the Canny algorithm with user-controlled threshold sliders.
+**Edge Detection:** Apply Canny edge detection with real-time control over low and high threshold values using sliders.
 
-**Brightness Control:** Dynamically adjust image brightness using a slider.
+**Brightness Control:** Fine-tune image brightness to improve visibility and contrast during preprocessing.  
 
-**Interactive Zoom:**
+**Interactive Zoom:**  Scroll the mouse wheel to adjust image sharpness (simulate focus by clarifying or blurring the image).  
 
-Left-click on the image to display a zoomed-in region.
+Use the zoom area slider to set the zoom level. 
 
-Use the mouse wheel to zoom in/out on the full image window.
+Select the region to zoom into for focused inspection.  
 
-Adjustable zoom area size with slider.
+Left-click on the image to activate the magnifier tool and view pixel-level detail, even after zooming. 
 
-**Image Saving:** Save processed images in PNG or JPEG format.
+**Image Saving:** Save the processed image in PNG or JPEG format with a single click.
+
+
+
+**Installation**
+
+Clone the repository: bash git clone https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git
+
+cd Medical-Image-Processor-with-Interactive-Zoom
+
+
+Install dependencies: bash pip install -r requirements.txt 
+
+install manually: bash pip install PySide6 opencv-python
+
+
+**Usage**
+
+Run the application using: bash python main.py
+
+Once the GUI opens:
+
+Click Load Image to select an image from your computer.
+
+Use the Grayscale or Edge Detection buttons to apply filters.
+
+Scroll the mouse wheel to adjust the sharpness (simulate focus by clarifying or blurring the image).
+
+Move the slider to set the zoom level, and select the region you want to zoom into.
+
+Left-click on the image to activate the magnifier tool.
+
+Click Save Image to export the processed version.
+
 
 
 
