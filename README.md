@@ -1,13 +1,13 @@
 ### _**Medical Image Processor with Interactive Zoom**_
 
 
-🧠 **Project Description**
+[🧠 **Project Description**](url)
 
 Medical Image Processor with Interactive Zoom is a Python-based GUI application developed using PySide 6 and OpenCV. It allows users to perform basic image processing tasks such as grayscale conversion and edge detection on medical images. The application features two forms of visual inspection: users can scroll the mouse wheel to adjust image sharpness (simulate focus), and they can zoom into a selected region by adjusting the zoom area slider and choosing the desired part of the image. A magnifier tool activated by left-click further enhances detailed analysis of specific areas.
 
 This project was developed as part of the Computational Methods in Engineering course at Ankara University, Department of Biomedical Engineering.
 
-✨ **Features**
+[✨ **Features**](url)
 
 **Image Upload:** Load PNG, JPEG, and JPG images through a user-friendly file dialog.  
 
@@ -28,7 +28,7 @@ Left-click on the image to activate the magnifier tool and view pixel-level deta
 **Image Saving:** Save the processed image in PNG or JPEG format with a single click.
 
 
-**Installation**
+[**Installation**](url)
 
 Clone the repository: bash git clone https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git
 
@@ -40,8 +40,7 @@ Install dependencies: bash pip install -r requirements.txt
 install manually: bash pip install PySide6 opencv-python
 
 
-**Usage**
-
+[**Usage**](url)
 Run the application using: bash python main.py
 
 Once the GUI opens:
@@ -61,7 +60,7 @@ Click Save Image to export the processed version.
 
 
 
-**Screenshots**
+[**Screenshots**](url)
 
 **Main Window**
 
@@ -90,11 +89,13 @@ Click Save Image to export the processed version.
 
 
 
-📝 **Notes**
+[📝 **Notes**](url)
 
 Ensure your system has a proper Python environment setup before running the application. If you encounter issues, check that all dependencies (such as PySide6 and OpenCV) are correctly installed.
 
 
-**Contributing**
+[**Contributing**](url)
 
 Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements.
+
+
