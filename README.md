@@ -63,34 +63,30 @@ Click Save Image to export the processed version.
 
 **Main Window**
 
-![Image](https://github.com/user-attachments/assets/91ef679d-b1fa-4561-bd80-44fca1ffb628)
-
+![imageprocessor](https://github.com/user-attachments/assets/9410813f-69ce-4b49-80b0-3fe5b98654ef)
 
 **Grayscale** 
 
-![Image](https://github.com/user-attachments/assets/1f33e9e7-5163-4aab-8491-f9eb9b800b35)
-
-![Image](https://github.com/user-attachments/assets/5c68f75b-b7be-4950-8dbe-697ee38d7b8b)
-
+![grayscale2](https://github.com/user-attachments/assets/a1dc5d36-3c45-4552-8b06-a43b77c9d005)
+![grayscale1](https://github.com/user-attachments/assets/5239c2cb-7ffc-4564-ab94-bfc8832b8b90)
 
 **Edge Detection**
 
-![Image](https://github.com/user-attachments/assets/d19da331-674b-45fe-82cd-04f915c5b21f)
+![edge detection1](https://github.com/user-attachments/assets/7a257ebf-c1e1-4b26-9b03-cd750be37aa4)
 
 
 **Zoomed Region**
 
-![Image](https://github.com/user-attachments/assets/1749099d-5267-4b3f-9a24-2d9ad13f8a87)
-
-![Image](https://github.com/user-attachments/assets/ab01d866-bff2-4fb4-b8b2-ff172c413e56)
-
-![Image](https://github.com/user-attachments/assets/1aefeeb7-e94b-41fd-9662-103d48d6ceef)
+![zoom3](https://github.com/user-attachments/assets/5e3ef3e1-6716-437b-968b-cee13edcb32f)
+![zoom2](https://github.com/user-attachments/assets/5c8be795-7d6d-4981-addd-428a7b5cde83)
+![zoom1](https://github.com/user-attachments/assets/0a3e6af3-5b19-4d78-9920-cdbc33e2f346)
 
 
 
 [📝**Notes**](url)
 
 Ensure your system has a proper Python environment setup before running the application. If you encounter issues, check that all dependencies (such as PySide6 and OpenCV) are correctly installed.
+
 
 
 [**Contributing**](url)
