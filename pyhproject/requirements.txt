@@ -1,1 +1,17 @@
-PySide6
+# Medical Image Processor Dependencies
+# Core GUI Framework
+PySide6>=6.0.0
+
+# Computer Vision and Image Processing
+opencv-python>=4.5.0
+
+# Numerical Computing
+numpy>=1.21.0
+
+# Optional: Enhanced image format support
+Pillow>=8.0.0
+
+# Development Dependencies (uncomment if needed)
+# pytest>=6.0.0
+# black>=21.0.0
+# flake8>=3.9.0
