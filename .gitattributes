@@ -1,2 +1,170 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Python files
+*.py text eol=lf
+*.pyx text eol=lf
+*.pxd text eol=lf
+*.pxi text eol=lf
+
+# Configuration files
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+*.config text eol=lf
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+
+# Documentation files
+*.md text eol=lf
+*.rst text eol=lf
+*.txt text eol=lf
+*.rtf text eol=lf
+
+# Web files
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.xml text eol=lf
+
+# Qt/PySide files
+*.ui text eol=lf
+*.qrc text eol=lf
+*.pro text eol=lf
+*.pri text eol=lf
+*.qml text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Git files
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.gitmodules text eol=lf
+
+# License and documentation
+LICENSE text eol=lf
+README* text eol=lf
+CHANGELOG* text eol=lf
+CONTRIBUTING* text eol=lf
+INSTALL* text eol=lf
+NEWS* text eol=lf
+AUTHORS* text eol=lf
+COPYING* text eol=lf
+
+# Medical Image Files - Binary handling
+*.dcm binary
+*.dicom binary
+*.nii binary
+*.nii.gz binary
+*.hdr binary
+*.img binary
+
+# Standard Image Files - Binary handling
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.bmp binary
+*.tiff binary
+*.tif binary
+*.ico binary
+*.svg text eol=lf
+
+# Data files - Binary handling
+*.npy binary
+*.npz binary
+*.h5 binary
+*.hdf5 binary
+*.mat binary
+*.pkl binary
+*.pickle binary
+
+# Archive files - Binary handling
+*.zip binary
+*.tar binary
+*.tar.gz binary
+*.tar.bz2 binary
+*.7z binary
+*.rar binary
+
+# Executable files - Binary handling
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.app binary
+
+# Font files - Binary handling
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# Media files - Binary handling
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.wmv binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+
+# Development files
+requirements*.txt text eol=lf
+setup.py text eol=lf
+setup.cfg text eol=lf
+pyproject.toml text eol=lf
+Pipfile text eol=lf
+Pipfile.lock text eol=lf
+Makefile text eol=lf
+CMakeLists.txt text eol=lf
+
+# CI/CD files
+*.yml text eol=lf
+*.yaml text eol=lf
+.travis.yml text eol=lf
+.github/workflows/*.yml text eol=lf
+.github/workflows/*.yaml text eol=lf
+appveyor.yml text eol=lf
+Jenkinsfile text eol=lf
+Dockerfile text eol=lf
+docker-compose*.yml text eol=lf
+
+# IDE and Editor files
+.vscode/*.json text eol=lf
+.idea/*.xml text eol=lf
+*.sublime-project text eol=lf
+*.sublime-workspace text eol=lf
+
+# Language specific settings
+# Ensure Python files use consistent line endings across platforms
+[attr]python text eol=lf
+
+# Medical imaging specific attributes
+*.dcm filter=lfs diff=lfs merge=lfs -text
+*.nii filter=lfs diff=lfs merge=lfs -text
+*.nii.gz filter=lfs diff=lfs merge=lfs -text
+
+# Large binary files should use Git LFS if available
+# Uncomment the following lines if using Git LFS for large medical images
+# *.dcm filter=lfs diff=lfs merge=lfs -text
+# *.nii filter=lfs diff=lfs merge=lfs -text
+# *.nii.gz filter=lfs diff=lfs merge=lfs -text
+# *.hdf5 filter=lfs diff=lfs merge=lfs -text
+# *.h5 filter=lfs diff=lfs merge=lfs -text
+
+# Export-ignore (files not included in git archive)
+.gitignore export-ignore
+.gitattributes export-ignore
+.github/ export-ignore
+tests/ export-ignore
+docs/developer_guide.md export-ignore
+scripts/development_tools/ export-ignore
