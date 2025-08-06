@@ -3,93 +3,171 @@
 
 [🧠 **Project Description**](url)
 
-Medical Image Processor with Interactive Zoom is a Python-based GUI application developed using PySide 6 and OpenCV. It allows users to perform basic image processing tasks such as grayscale conversion and edge detection on medical images. The application features two forms of visual inspection: users can scroll the mouse wheel to adjust image sharpness (simulate focus), and they can zoom into a selected region by adjusting the zoom area slider and choosing the desired part of the image. A magnifier tool activated by left-click further enhances detailed analysis of specific areas.
+Medical Image Processor with Interactive Zoom & Focus Control is an advanced Python-based GUI application developed using PySide 6 and OpenCV. Designed specifically for medical image analysis, this application provides comprehensive image processing capabilities including grayscale conversion, edge detection, contrast enhancement, and interactive zoom functionality. The application features sophisticated focus control through mouse wheel interaction and includes CLAHE (Contrast Limited Adaptive Histogram Equalization) enhancement for improved lesion visibility in medical images.
+Key innovations include real-time focus adjustment (sharpening/blurring), intelligent zoom with magnifier tool, and specialized medical imaging enhancements. The application maintains the original image in the main display while providing detailed analysis in separate interactive windows.
 
 This project was developed as part of the Computational Methods in Engineering course at Ankara University, Department of Biomedical Engineering.
 
 [✨ **Features**](url)
 
-**Image Upload:** Load PNG, JPEG, and JPG images through a user-friendly file dialog.  
+**🖼️ Image Upload & Support:**
 
-**Grayscale Conversion:** Convert colored medical images to grayscale. Brightness can be adjusted dynamically via a slider.  
+Load PNG, JPEG, JPG, BMP, and TIFF images through user-friendly file dialog
+Enhanced file handling with support for Unicode/Turkish file paths
+Robust error handling and fallback loading methods
 
-**Edge Detection:** Apply Canny edge detection with real-time control over low and high threshold values using sliders.
+**🔄 Advanced Image Processing:**
 
-**Brightness Control:** Fine-tune image brightness to improve visibility and contrast during preprocessing.  
+Grayscale Conversion: Convert medical images to grayscale with dynamic brightness control
+Edge Detection: Advanced Canny edge detection with real-time threshold adjustment and pre-processing
+Contrast Enhancement: Dedicated contrast enhancement with automatic CLAHE application
+CLAHE Enhancement: Optional Contrast Limited Adaptive Histogram Equalization for better lesion visibility (toggle on/off)
 
-**Interactive Zoom:**  Scroll the mouse wheel to adjust image sharpness (simulate focus by clarifying or blurring the image).  
+**🎛️ Real-time Controls:**
 
-Use the zoom area slider to set the zoom level. 
+Brightness Control: Fine-tune image brightness (0-100 range)
+Contrast Control: Dynamic contrast adjustment (0-100 range)
+Edge Detection Thresholds: Separate low (0-255) and high (0-255) threshold controls for Canny edge detection
+Zoom Area Size: Adjustable zoom region size (20-300 pixels)
 
-Select the region to zoom into for focused inspection.  
+**🔍 Interactive Focus & Zoom System:**
 
-Left-click on the image to activate the magnifier tool and view pixel-level detail, even after zooming. 
+Focus Control: Scroll mouse wheel to adjust image sharpness (-10 to +10 levels)
 
-**Image Saving:** Save the processed image in PNG or JPEG format with a single click.
+Scroll up: Sharpen image with unsharp mask technique
+Scroll down: Apply Gaussian blur for softer focus
+
+
+**Interactive Zoom:** Click anywhere on the image to activate magnifier tool
+Smart Zoom Display: Zoom opens in separate window while maintaining original image in main display
+Region Selection: Intelligent boundary detection and region extraction
+
+**💾 Enhanced Saving:**
+
+Save processed images in PNG, JPEG formats
+Unicode path support for international file names
+Robust saving with fallback methods
+
+**🎯 Medical Imaging Optimizations:**
+
+CLAHE enhancement specifically designed for medical imaging
+Gaussian blur pre-processing for smoother edge detection
+Unsharp mask sharpening for better detail enhancement
+Optimized for lesion and abnormality detection
 
 
 [**Installation**](url)
 
-Clone the repository: bash git clone `https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git `
-
+**Clone the repository:**
+```bash git clone `https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git `
 `cd Medical-Image-Processor-with-Interactive-Zoom`
 
 Install dependencies: bash `pip install -r requirements.txt `
 
-install manually: bash `pip install PySide6 opencv-python`
+install manually: bash `pip install PySide6 opencv-python numpy`
 
 [**Usage**](url)
 
 Run the application using: bash `python main.py`
 
-Once the GUI opens:
+**Basic Workflow:**
 
-Click Load Image to select an image from your computer.
+Load Image: Click "Load Image" to select a medical image from your computer
+Choose Enhancement: Enable "CLAHE Enhancement" checkbox for better lesion visibility (optional)
+Apply Processing: Use "Apply Grayscale", "Edge Detection", or "Enhance Contrast" buttons
+Adjust Parameters: Use sliders to fine-tune brightness, contrast, and thresholds in real-time
+Interactive Analysis:
 
-Use the Grayscale or Edge Detection buttons to apply filters.
+   Focus Control: Scroll mouse wheel over processed image to adjust sharpness/blur
+   Zoom Analysis: Left-click on any region to open magnified view (400x400 pixels)
+Save Results: Click "Save Image" to export processed version
 
-Scroll the mouse wheel to adjust the sharpness (simulate focus by clarifying or blurring the image).
+**Advanced Features:**
 
-Move the slider to set the zoom level, and select the region you want to zoom into.
-
-Left-click on the image to activate the magnifier tool.
-
-Click Save Image to export the processed version.
-
+CLAHE Enhancement: Toggle on for medical images with poor contrast
+Focus Levels: -10 (maximum blur) to +10 (maximum sharpening)
+Zoom Area Control: Adjust zoom region size before clicking for magnification
+Multi-Window Analysis: Original stays in main window, zoom opens separately
 
 
 
 [**Screenshots**](url)
 
-**Main Window**
+**Main Application Interface**
 
-![imageprocessor](https://github.com/user-attachments/assets/9410813f-69ce-4b49-80b0-3fe5b98654ef)
-
-**Grayscale** 
-
-![grayscale2](https://github.com/user-attachments/assets/a1dc5d36-3c45-4552-8b06-a43b77c9d005)
-![grayscale1](https://github.com/user-attachments/assets/5239c2cb-7ffc-4564-ab94-bfc8832b8b90)
-
-**Edge Detection**
-
-![edge detection1](https://github.com/user-attachments/assets/7a257ebf-c1e1-4b26-9b03-cd750be37aa4)
+![mainwindow](https://github.com/user-attachments/assets/34e40f92-1813-4b3a-92d7-ea5f74b6e044)
+Medical Image Processor main interface with chest X-ray loaded and real-time control panels
 
 
-**Zoomed Region**
 
-![zoom3](https://github.com/user-attachments/assets/5e3ef3e1-6716-437b-968b-cee13edcb32f)
-![zoom2](https://github.com/user-attachments/assets/5c8be795-7d6d-4981-addd-428a7b5cde83)
-![zoom1](https://github.com/user-attachments/assets/0a3e6af3-5b19-4d78-9920-cdbc33e2f346)
+**Grayscale Processing with Interactive Magnifier** 
+
+![grayscale2](https://github.com/user-attachments/assets/15905775-bf3f-4a78-b6f1-bc39b1cf3d52)
+![graysacel1](https://github.com/user-attachments/assets/c5cd9190-4bca-4cbc-92b3-169e3d8368ec)
+
+
+
+**Edge Detection Results**
+
+![edge detection](https://github.com/user-attachments/assets/bd5523e2-5b0b-4c5c-82df-b23153c62f63)
+Advanced Canny edge detection with real-time threshold adjustment showing anatomical boundaries
+
+
+**Zoomed Region-Real-time Processing with Multiple Windows**
+
+![zoomed](https://github.com/user-attachments/assets/6fa96bce-181b-4820-be61-664e493e03d1)
+![zoomedarea](https://github.com/user-attachments/assets/8170dd2a-3ae5-4c57-82b2-cdf39df8853b)
+4x magnified region showing detailed anatomical structures with enhanced contrast for precise medical diagnosis
 
 
 
 [📝**Notes**](url)
 
+**Image Processing Algorithms:**
+
+CLAHE: Contrast Limited Adaptive Histogram Equalization with 8x8 tile grid
+Edge Detection: Canny algorithm with Gaussian blur pre-processing
+Focus Control: Unsharp mask for sharpening, Gaussian blur for defocus
+Zoom: Cubic interpolation for high-quality magnification
+
+**Key Improvements:**
+
+Unicode file path support for international users
+Robust error handling with fallback methods
+Memory-efficient image processing
+Real-time parameter adjustment without reloading
+Separate zoom windows to preserve original view
+
+**Requirements & Notes**
+System Requirements:
+
+Python 3.7+
+PySide6
+OpenCV (cv2)
+NumPy
+
+CLAHE enhancement is optional - enable for medical images with poor contrast
+Focus control works in real-time on processed images
+Zoom tool works on any region of the processed image
+All processing maintains original image quality
+Supports Unicode file paths (Turkish characters, etc.)
+
+**Troubleshooting:**
+
+If images won't load, check file format compatibility
+For Turkish/Unicode paths, the application includes automatic fallback handling
+Ensure all dependencies are properly installed
 Ensure your system has a proper Python environment setup before running the application. If you encounter issues, check that all dependencies (such as PySide6 and OpenCV) are correctly installed.
 
 
 
 [**Contributing**](url)
 
-Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements.
+Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements. Areas for potential enhancement:
+
+Additional medical imaging algorithms
+More zoom levels and pan functionality
+Batch processing capabilities
+Advanced filtering options
+Export format options
 
