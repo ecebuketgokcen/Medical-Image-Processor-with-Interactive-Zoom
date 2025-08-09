@@ -59,7 +59,8 @@ Optimized for lesion and abnormality detection
 [**Installation**](url)
 
 **Clone the repository:**
-```bash git clone `https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git `
+`bash git clone `https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git`
+
 `cd Medical-Image-Processor-with-Interactive-Zoom`
 
 Install dependencies: bash `pip install -r requirements.txt `
