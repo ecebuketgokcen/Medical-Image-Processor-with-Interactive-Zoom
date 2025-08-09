@@ -12,14 +12,14 @@ This project was developed as part of the Computational Methods in Engineering c
 ## ✨Features
 
 **🖼️ Image Upload & Support:**
-- Load PNG, JPEG, JPG, BMP, and TIFF images through user-friendly file dialog  
-- Enhanced file handling with support for Unicode/Turkish file paths  
-- Robust error handling and fallback loading methods  
+- Multi-format medical image loading (PNG, JPEG, JPG, BMP, TIFF)
+- Professional file handling with comprehensive error management
+- User-friendly interface with clear feedback and recovery options
 
 **🔄 Advanced Image Processing:**
 - Grayscale Conversion: Convert medical images to grayscale with dynamic brightness control  
 - Edge Detection: Advanced Canny edge detection with real-time threshold adjustment and pre-processing  
-- Contrast Enhancement: Dedicated contrast enhancement with automatic CLAHE application  
+- Contrast Enhancement: Professional CLAHE enhancement with automatic application
 - CLAHE Enhancement: Optional Contrast Limited Adaptive Histogram Equalization for better lesion visibility (toggle on/off)  
 
 **🎛️ Real-time Controls:**
@@ -74,14 +74,14 @@ python main.py
 ```
 
 **Basic Workflow:**
-- **Load Image:** Click "Load Image" to select a medical image from your computer  
+- **Load Image:** Click "Load Medical Image" to select a medical image from your computer  
 - **Choose Enhancement:** Enable "CLAHE Enhancement" checkbox for better lesion visibility (optional)  
 - **Apply Processing:** Use "Apply Grayscale", "Edge Detection", or "Enhance Contrast" buttons  
 - **Adjust Parameters:** Use sliders to fine-tune brightness, contrast, and thresholds in real-time  
 - **Interactive Analysis:**  
   - Focus Control: Scroll mouse wheel over processed image to adjust sharpness/blur  
   - Zoom Analysis: Left-click on any region to open magnified view (400x400 pixels)  
-- **Save Results:** Click "Save Image" to export processed version  
+- **Save Results:** Click "Save Processed" to export processed version  
 
 **Advanced Features:**
 - **CLAHE Enhancement:** Toggle on for medical images with poor contrast  
@@ -94,32 +94,39 @@ python main.py
 
 ## Screenshots
 
-**Main Application Interface**
+## Main Application Interface
 
-![mainwindow](https://github.com/user-attachments/assets/34e40f92-1813-4b3a-92d7-ea5f74b6e044)
+<img width="1370" height="963" alt="mainwindow" src="https://github.com/user-attachments/assets/560358ab-f1b8-40dc-a800-3e5725df6f0f" />
+
 Medical Image Processor main interface with chest X-ray loaded and real-time control panels.
 
 
+## Grayscale Processing with Interactive Magnifier 
 
-**Grayscale Processing with Interactive Magnifier** 
-
-![grayscale2](https://github.com/user-attachments/assets/15905775-bf3f-4a78-b6f1-bc39b1cf3d52)
-![graysacel1](https://github.com/user-attachments/assets/c5cd9190-4bca-4cbc-92b3-169e3d8368ec)
-
+<img width="1917" height="960" alt="1grayscale" src="https://github.com/user-attachments/assets/9162ec74-f421-46fa-b58b-b1eca6e6a249" />
+<img width="1906" height="975" alt="3grayscale" src="https://github.com/user-attachments/assets/fd7ce486-39d1-441b-bcbc-8fbb6425bc2e" />
+<img width="1917" height="975" alt="2grayscale" src="https://github.com/user-attachments/assets/1ec7d470-c10a-444a-b54c-18fcdef86876" />
 
 
-**Edge Detection Results**
+## Edge Detection Results
 
-![edge detection](https://github.com/user-attachments/assets/bd5523e2-5b0b-4c5c-82df-b23153c62f63)
+<img width="1904" height="961" alt="1edge" src="https://github.com/user-attachments/assets/88004618-0c2d-4f6c-a45a-6ba061908e54" />
+
 Advanced Canny edge detection with real-time threshold adjustment showing anatomical boundaries.
 
 
-**Zoomed Region-Real-time Processing with Multiple Windows**
+## Zoomed Region-Real-time Processing with Multiple Windows
 
-![zoomed](https://github.com/user-attachments/assets/6fa96bce-181b-4820-be61-664e493e03d1)
-![zoomedarea](https://github.com/user-attachments/assets/8170dd2a-3ae5-4c57-82b2-cdf39df8853b)
+<img width="1918" height="1002" alt="zoomed2" src="https://github.com/user-attachments/assets/1ed8d4dc-c8f0-4268-ab07-23378e697760" />
+<img width="1912" height="994" alt="zoomed1" src="https://github.com/user-attachments/assets/9b128aca-b3b9-456e-a9dd-543cd31ea3bc" />
+
 4x magnified region showing detailed anatomical structures with enhanced contrast for precise medical diagnosis.
 
+## Enhance Contrast
+
+<img width="1912" height="965" alt="2enhance" src="https://github.com/user-attachments/assets/a902b95d-2813-4b6a-8a26-bac30eadc225" />
+<img width="1915" height="978" alt="1enhance" src="https://github.com/user-attachments/assets/bb37d439-500a-4e35-86f3-f0b18b784016" />
+CLAHE enhancement algorithm automatically optimizes medical image contrast for improved lesion visibility and diagnostic accuracy.
 
 
 ## 📝Notes
@@ -156,7 +163,6 @@ Advanced Canny edge detection with real-time threshold adjustment showing anatom
 ## Troubleshooting
 
 - If images won't load, check file format compatibility  
-- For Turkish/Unicode paths, the application includes automatic fallback handling  
 - Ensure all dependencies are properly installed  
 - Make sure your system has a proper Python environment setup before running the application  
 - If you encounter issues, check that all dependencies (such as PySide6 and OpenCV) are correctly installed  
