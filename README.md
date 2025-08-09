@@ -59,9 +59,7 @@ Optimized for lesion and abnormality detection
 [**Installation**](url)
 
 **Clone the repository:**
-`bash git clone `https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git`
-
-`cd Medical-Image-Processor-with-Interactive-Zoom`
+<pre> ```bash git clone https://github.com/ecebuketgokcen/Medical-Image-Processor-with-Interactive-Zoom.git cd Medical-Image-Processor-with-Interactive-Zoom ``` </pre>
 
 Install dependencies: bash `pip install -r requirements.txt `
 
@@ -97,7 +95,7 @@ Multi-Window Analysis: Original stays in main window, zoom opens separately
 **Main Application Interface**
 
 ![mainwindow](https://github.com/user-attachments/assets/34e40f92-1813-4b3a-92d7-ea5f74b6e044)
-Medical Image Processor main interface with chest X-ray loaded and real-time control panels
+Medical Image Processor main interface with chest X-ray loaded and real-time control panels.
 
 
 
@@ -111,14 +109,14 @@ Medical Image Processor main interface with chest X-ray loaded and real-time con
 **Edge Detection Results**
 
 ![edge detection](https://github.com/user-attachments/assets/bd5523e2-5b0b-4c5c-82df-b23153c62f63)
-Advanced Canny edge detection with real-time threshold adjustment showing anatomical boundaries
+Advanced Canny edge detection with real-time threshold adjustment showing anatomical boundaries.
 
 
 **Zoomed Region-Real-time Processing with Multiple Windows**
 
 ![zoomed](https://github.com/user-attachments/assets/6fa96bce-181b-4820-be61-664e493e03d1)
 ![zoomedarea](https://github.com/user-attachments/assets/8170dd2a-3ae5-4c57-82b2-cdf39df8853b)
-4x magnified region showing detailed anatomical structures with enhanced contrast for precise medical diagnosis
+4x magnified region showing detailed anatomical structures with enhanced contrast for precise medical diagnosis.
 
 
 
@@ -166,9 +164,9 @@ Ensure your system has a proper Python environment setup before running the appl
 
 Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements. Areas for potential enhancement:
 
-Additional medical imaging algorithms
-More zoom levels and pan functionality
-Batch processing capabilities
-Advanced filtering options
-Export format options
+Additional medical imaging algorithms,
+More zoom levels and pan functionality,
+Batch processing capabilities,
+Advanced filtering options,
+Export format options.
 
